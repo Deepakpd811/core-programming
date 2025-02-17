@@ -17,7 +17,7 @@ public class FlatArray {
                 arr[i][j] = sc.nextInt();
             }
         }
-    
+        
         int[] flatArray = new int[row * col];
 
         int k = 0;
