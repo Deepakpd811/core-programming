@@ -36,8 +36,5 @@ public class EquationOfLine {
 
         System.out.println("Equation of the line: y = " + Equation[0] + "x + " + Equation[1]);
 
-
-
-
     }
 }
