@@ -39,7 +39,7 @@ public class BMI_2dArray {
                 continue;
             }
 
-            // Calculate BMI
+            // Calculate BMI         weight                 height          height
             personData[i][2] = personData[i][0] / (personData[i][1] * personData[i][1]);
 
             if (personData[i][2] < 18.5) {
@@ -51,13 +51,15 @@ public class BMI_2dArray {
             } else {
                 weightStatus[i] = "Obese";
             }
-
+            
         }
 
         System.out.println("Person\tHeight\tWeight\tBMI\tStatus");
         for (int i = 0; i < number; i++) {
             System.out.println((i + 1) + "\t" + personData[i][1] + "\t" + personData[i][0] + "\t" + personData[i][2] + "\t" + weightStatus[i]);
         }
+        
+
 
         sc.close();
     }
