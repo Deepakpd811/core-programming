@@ -25,7 +25,7 @@ public class StudentScoreCard {
             int total = scores[i][0] + scores[i][1] + scores[i][2];
             double average = total / 3.0;
             double percentage = (total / 300.0) * 100;
-
+            
             results[i][0] = total;
             results[i][1] = Math.round(average * 100.0) / 100.0;
             results[i][2] = Math.round(percentage * 100.0) / 100.0;
@@ -37,14 +37,16 @@ public class StudentScoreCard {
 
     // Method to determine the grade based on the percentage
     public static char determineGrade(double percentage) {
-        if (percentage >= 90)
-            return 'A';
         if (percentage >= 80)
-            return 'B';
+            return 'A';
         if (percentage >= 70)
-            return 'C';
+            return 'B';
         if (percentage >= 60)
+            return 'C';
+        if (percentage >= 50)
             return 'D';
+        if (percentage >= 40)
+            return 'E';
         return 'F';
     }
 
