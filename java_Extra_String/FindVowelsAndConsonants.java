@@ -38,11 +38,11 @@ public class FindVowelsAndConsonants {
 
     // Main function to take user inputs and display the result
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string: ");
-        String input = scanner.nextLine();
+        String input = sc.nextLine();
         String[][] result = findVowelsAndConsonants(input);
         displayResult(result);
-        scanner.close();
+        sc.close();
     }
 }

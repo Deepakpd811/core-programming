@@ -14,7 +14,7 @@ public class removeAllOccurance {
     public static void main(String[] args) {
         String str ="hello world";
 
-    }
         System.out.println("Modified word: " + charRemove(str, 'l'));
+    }
         
 }
